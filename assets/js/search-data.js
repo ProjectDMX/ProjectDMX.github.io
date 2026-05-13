@@ -3,35 +3,41 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-home",
-    title: "home",
+    id: "nav-dmxlab",
+    title: "DMXLab",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-blog",
-          title: "blog",
+          title: "Blog",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
           },
         },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
+          title: "People",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
           },
         },{id: "nav-publications",
-          title: "publications",
-          description: "DMX Lab publications.",
+          title: "Publications",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "news-dmx-lab-website-launched",
-          title: 'DMX Lab website launched.',
+        },{id: "news-dmi-v1-0-0-released",
+          title: 'DMI v1.0.0 released.',
+          description: "",
+          section: "News",},{id: "news-our-dmi-paper-is-now-available-on-arxiv",
+          title: 'Our DMI paper is now available on arXiv.',
+          description: "",
+          section: "News",},{id: "news-dmxlab-website-launched",
+          title: 'DMXLab website launched.',
           description: "",
           section: "News",},{
       id: 'light-theme',
