@@ -38,7 +38,7 @@ nav_order: 2
     </a>
   </div>
   <div class="col text-center">
-    <a href="">
+    <a href="https://github.com/XbzOnGit" rel="external nofollow noopener" target="_blank">
       <img
         src="/assets/img/people/placeholder.svg"
         class="img-fluid rounded-circle mb-2"
