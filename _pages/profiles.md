@@ -60,9 +60,9 @@ nav_order: 2
     </a>
   </div>
   <div class="col text-center">
-    <a href="">
+    <a href="https://wweione.github.io">
       <img
-        src="/assets/img/people/placeholder.svg"
+        src="/assets/img/people/wei_wang.jpg"
         class="img-fluid rounded-circle mb-2"
         alt="Wei Wang"
         style="width: 150px; height: 150px; object-fit: cover;"
