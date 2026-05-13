@@ -1,6 +1,6 @@
 ---
 layout: about
-title: home
+title: DMXLab
 permalink: /
 subtitle:
 
@@ -22,8 +22,8 @@ latest_posts:
 
 ## Vision
 
-DMX Lab builds systems for data, models, and observability in the agentic era. This site is the public home for the lab's research, software, publications, and team updates.
+DMXLab builds systems that unlock more of what models know while they run. By exposing rich runtime internal data from modern AI models, we aim to power new applications in debugging, interpretability, monitoring, steering, distillation, and beyond.
 
 ## Open Source Releases
 
-- [ProjectDMX GitHub](https://github.com/ProjectDMX): lab repositories and open-source releases.
+- [ProjectDMX](https://github.com/ProjectDMX): lab repositories and open-source releases.

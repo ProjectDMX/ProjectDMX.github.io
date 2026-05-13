@@ -6,6 +6,10 @@
 @use "sass:color";
 
 // Colors
+$dmx-navy: #081838 !default;
+$dmx-coral: #f06050 !default;
+$dmx-sand: #d8b890 !default;
+$dmx-cream: #fbfaf7 !default;
 $red-color: #ff3636 !default;
 $red-color-dark: #b71c1c !default;
 $orange-color: #f29105 !default;
@@ -34,8 +38,8 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
-$code-bg-color-dark: #2c3237 !default;
+$code-bg-color-light: rgba($dmx-coral, 0.08);
+$code-bg-color-dark: rgba($dmx-sand, 0.13) !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";

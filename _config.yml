@@ -2,15 +2,15 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: DMX Lab # the website title (if blank, full name will be used instead)
-first_name: DMX Lab
+title: DMXLab # the website title (if blank, full name will be used instead)
+first_name: DMXLab
 middle_name:
 last_name: Team
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  DMX Lab research website.
+  DMXLab - Building data, model, and observability systems for the agentic era.
 footer_text:
-keywords: dmx, dmx lab, systems, machine learning, observability # add your own keywords or leave empty
+keywords: dmx, dmxlab, systems, machine learning, observability # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: D # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -87,7 +87,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: DMX Lab Blog # blog_name will be displayed in your blog page
+blog_name: Blog # blog_name will be displayed in your blog page
 blog_description:
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
@@ -265,8 +265,8 @@ display_categories: [] # these categories will be displayed on the front page of
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [DMX Lab]
-  first_name: []
+  last_name: [Liu]
+  first_name: [Alan, Zaoxing]
 
   style: apa
   locale: en
@@ -447,7 +447,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
   highlightjs:
     integrity:
       css:

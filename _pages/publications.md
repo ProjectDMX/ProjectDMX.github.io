@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: DMX Lab publications.
+title: Publications
+description:
 nav: true
 nav_order: 3
 ---

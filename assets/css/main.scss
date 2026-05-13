@@ -37,3 +37,110 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+body {
+  padding-bottom: 70px;
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.navbar {
+  border-bottom-color: var(--global-divider-color);
+}
+
+.navbar.navbar-light .navbar-brand.title {
+  color: #081838;
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .navbar.navbar-light .navbar-brand.title {
+  color: #d8b890;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  color: var(--global-theme-color);
+}
+
+footer.fixed-bottom {
+  border-top: 1px solid rgba(216, 184, 144, 0.22);
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+.post-title {
+  color: var(--global-theme-color);
+  font-weight: 700;
+}
+
+.post-description {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.post article h2:not(.bibliography) {
+  border-bottom: 2px solid var(--global-theme-color);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.25rem;
+}
+
+.post article .row-cols-2 .col a {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.post article .row-cols-2 .col a:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+}
+
+.post article .row-cols-2 .col a:hover img {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  border-color: var(--global-theme-color);
+}
+
+.post article .row-cols-2 .col a:hover h6 {
+  color: var(--global-theme-color);
+}
+
+.post article .row-cols-2 .col img.rounded-circle {
+  border: 2px solid var(--global-divider-color);
+  transition:
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.post article .row-cols-2 .col h6 {
+  margin-top: 0.6rem;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.publications ol.bibliography li {
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: box-shadow 0.15s ease;
+}
+
+.publications ol.bibliography li:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
