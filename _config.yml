@@ -7,8 +7,7 @@ first_name: DMXLab
 middle_name:
 last_name: Team
 contact_note:
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  DMXLab - Building data, model, and observability systems for the agentic era.
+description:
 footer_text:
 keywords: dmx, dmxlab, systems, machine learning, observability # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
