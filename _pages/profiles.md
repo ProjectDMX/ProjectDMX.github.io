@@ -51,7 +51,7 @@ nav_order: 2
   <div class="col text-center">
     <a href="https://zhaoyboo.github.io/" rel="external nofollow noopener" target="_blank">
       <img
-        src="/assets/img/people/placeholder.svg"
+        src="/assets/img/people/yibo_zhao.jpg"
         class="img-fluid rounded-circle mb-2"
         alt="Yibo Zhao"
         style="width: 150px; height: 150px; object-fit: cover;"
