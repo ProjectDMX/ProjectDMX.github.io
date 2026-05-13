@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "ProjectDMX/DMXLab.github.io",
+    "data-repo": "ProjectDMX/ProjectDMX.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
