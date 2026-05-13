@@ -26,4 +26,4 @@ DMXLab builds systems that unlock more of what models know while they run. By ex
 
 ## Open Source Releases
 
-- [ProjectDMX](https://github.com/ProjectDMX): lab repositories and open-source releases.
+- [DMI](https://github.com/ProjectDMX/DMI): a decoupled, asynchronous observation substrate for high-speed LLM inference.
