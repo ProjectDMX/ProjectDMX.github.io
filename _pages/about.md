@@ -22,8 +22,9 @@ latest_posts:
 
 ## Vision
 
-DMXLab builds systems that unlock more of what models know while they run. By exposing rich runtime internal data from modern AI models, we aim to power new applications in debugging, interpretability, monitoring, steering, distillation, and beyond.
+DMXLab 
+Our vision is to make frontier AI systems observable, steerable, and scientifically legible while they run at production speed. Today's large language models are increasingly deployed as opaque, high-throughput systems: they generate, retrieve, plan, refuse, hallucinate, and adapt in real time, but their internal computation is often hidden from researchers once models leave offline analysis settings. DMXLab aims to close this gap by building the systems frameworks, measurement science, and downstream applications needed to inspect deep models during execution.
 
 ## Open Source Releases
 
-- [DMI](https://github.com/ProjectDMX/DMI): a decoupled, asynchronous observation substrate for high-speed LLM inference.
+- [DMI](https://github.com/ProjectDMX/DMI): a decoupled, asynchronous observation system for high-speed LLM inference.
