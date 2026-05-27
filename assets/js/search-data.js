@@ -39,6 +39,9 @@ ninja.data = [{
           section: "News",},{id: "news-dmxlab-website-launched",
           title: 'DMXLab website launched.',
           description: "",
+          section: "News",},{id: "news-new-blog-series-dmi-for-vllm-internal-state-research-including-capability-and-performance-comparisons-with-vllm-hidden-state-extraction",
+          title: 'New blog series: DMI for vLLM internal-state research, including capability and performance comparisons...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
