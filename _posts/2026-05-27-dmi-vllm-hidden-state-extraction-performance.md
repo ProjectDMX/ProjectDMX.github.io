@@ -24,13 +24,24 @@ overhead by about **15-17x**.
 To compare extraction overhead directly, both runs exclude persistent storage
 cost and measure prefill throughput while tensors are captured.
 
-| Batch size | DMI overhead | vLLM Hidden State Extraction overhead |
-| ---: | ---: | ---: |
-| 1 | -14.0% | -20.4% |
-| 4 | -10.7% | -34.9% |
-| 8 | -6.9% | -40.1% |
-| 16 | **-2.4%** | **-41.1%** |
-| 32 | **-2.7%** | **-41.7%** |
+<div class="table-responsive">
+<table class="table table-bordered table-sm align-middle">
+  <thead>
+    <tr>
+      <th scope="col" class="text-end">Batch size</th>
+      <th scope="col" class="text-end">DMI overhead</th>
+      <th scope="col" class="text-end">vLLM Hidden State Extraction overhead</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="text-end">1</td><td class="text-end">-14.0%</td><td class="text-end">-20.4%</td></tr>
+    <tr><td class="text-end">4</td><td class="text-end">-10.7%</td><td class="text-end">-34.9%</td></tr>
+    <tr><td class="text-end">8</td><td class="text-end">-6.9%</td><td class="text-end">-40.1%</td></tr>
+    <tr><td class="text-end">16</td><td class="text-end"><strong>-2.4%</strong></td><td class="text-end"><strong>-41.1%</strong></td></tr>
+    <tr><td class="text-end">32</td><td class="text-end"><strong>-2.7%</strong></td><td class="text-end"><strong>-41.7%</strong></td></tr>
+  </tbody>
+</table>
+</div>
 
 At batch size 16, DMI's prefill overhead is **17.1x lower**. At batch size 32,
 it is **15.4x lower**. In throughput terms, DMI reaches 23,995 prefill

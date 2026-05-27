@@ -21,9 +21,11 @@ latest_posts:
 ---
 
 ## Vision
+Our vision is to make frontier AI systems observable, steerable, and scientifically legible while they run at production speed. 
 
-DMXLab 
-Our vision is to make frontier AI systems observable, steerable, and scientifically legible while they run at production speed. Today's large language models are increasingly deployed as opaque, high-throughput systems: they generate, retrieve, plan, refuse, hallucinate, and adapt in real time, but their internal computation is often hidden from researchers once models leave offline analysis settings. DMXLab aims to close this gap by building the systems frameworks, measurement science, and downstream applications needed to inspect deep models during execution.
+Today's large language models are increasingly deployed as opaque, high-throughput systems: they generate, retrieve, plan, refuse, hallucinate, and adapt in real time, but their internal computation is often hidden from researchers once models leave offline analysis settings. 
+
+DMXLab aims to close this gap by building the systems frameworks, measurement science, and downstream applications needed to inspect deep models during execution.
 
 ## Open Source Releases
 

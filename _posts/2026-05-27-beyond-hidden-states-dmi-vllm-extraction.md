@@ -31,17 +31,39 @@ In our Qwen3-4B comparison, we configured vLLM Hidden State Extraction to
 capture all hidden-state positions. We configured DMI with its `vllm-full`
 preset.
 
-| System | What It Captures |
-| --- | --- |
-| vLLM Hidden State Extraction | Hidden states at selected layer positions |
-| DMI `vllm-full` | Residual stream, Q/K/V/Z projections, attention output<sup>*</sup>, MLP in/out, layer-norm inputs/outputs, embeddings, final logits, token IDs |
+<div class="table-responsive">
+<table class="table table-bordered table-sm align-middle">
+  <thead>
+    <tr>
+      <th scope="col">System</th>
+      <th scope="col">What It Captures<sup>*</sup></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vLLM Hidden State Extraction</td>
+      <td>Hidden states at selected layer positions</td>
+    </tr>
+    <tr>
+      <td>DMI <code>vllm-full</code></td>
+      <td>Residual stream, Q/K/V/Z projections, MLP in/out, layer-norm inputs/outputs, embeddings, final logits, token IDs</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 
 For Qwen3-4B, that difference is large. vLLM Hidden State Extraction captures
-37 hidden-state tensors per request. DMI captures roughly 438 hook firings per
+**37 hidden-state tensors** per request. DMI captures **roughly 438 hook firings** per
 forward pass across the model.
 
 Measured as tensor elements per token, DMI captures about **13x more data** than
 vLLM Hidden State Extraction in this matched setup.
+
+
+<sup>*</sup> With FlashAttention-style fused kernels, raw attention-score and
+attention-pattern tensors are not materialized as ordinary tensors, so neither
+system captures them without changing the attention kernel path.
 
 ## Prefill and Decode
 
@@ -62,9 +84,6 @@ research: many questions about reasoning, uncertainty, steering, speculative
 decoding, and failure analysis depend on how internal states evolve while new
 tokens are being generated, not only on the prompt pass.
 
-<sup>*</sup> With FlashAttention-style fused kernels, raw attention-score and
-attention-pattern tensors are not materialized as ordinary tensors, so neither
-system captures them without changing the attention kernel path.
 
 Full benchmark details are in the
 [DMI vs. vLLM Hidden State Extraction report](https://github.com/ProjectDMX/DMI/blob/EHS_compare/docs/dmi_vllm_ehs/dmi-vs-ehs.md).
