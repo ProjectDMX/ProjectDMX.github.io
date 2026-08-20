@@ -131,6 +131,101 @@ samp {
   transition: color 0.15s ease;
 }
 
+.home-release-card {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.95fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  margin: 0.25rem 0 2rem;
+  color: var(--global-text-color);
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0.75rem;
+  text-decoration: none !important;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.home-release-card:hover,
+.home-release-card:focus-visible {
+  color: var(--global-text-color);
+  border-color: var(--global-theme-color);
+  box-shadow: 0 0.5rem 1.5rem rgba(8, 24, 56, 0.12);
+  transform: translateY(-2px);
+}
+
+.home-release-card:focus-visible {
+  outline: 3px solid var(--global-theme-color);
+  outline-offset: 3px;
+}
+
+.home-release-card__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 7rem;
+  padding: 0.75rem 1rem;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.home-release-card__logo img {
+  display: block;
+  width: 100%;
+  max-width: 18rem;
+  height: auto;
+}
+
+.home-release-card__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  line-height: 1.55;
+}
+
+.home-release-card__copy strong {
+  color: var(--global-text-color);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.home-release-card__cta {
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .home-release-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .home-release-card__logo {
+    min-height: 0;
+  }
+
+  .home-release-card__logo img {
+    max-width: 17rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-release-card {
+    transition: none;
+  }
+
+  .home-release-card:hover,
+  .home-release-card:focus-visible {
+    transform: none;
+  }
+}
+
 .publications ol.bibliography li {
   background-color: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);

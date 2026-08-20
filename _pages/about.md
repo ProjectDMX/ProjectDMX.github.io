@@ -29,4 +29,19 @@ DMXLab aims to close this gap by building the systems frameworks, measurement sc
 
 ## Open Source Releases
 
-- [DMI](https://github.com/ProjectDMX/DMI): a decoupled, asynchronous observation system for high-speed LLM inference.
+<a class="home-release-card" href="https://github.com/ProjectDMX/DMI" aria-label="Explore DMI on GitHub">
+  <span class="home-release-card__logo">
+    <img
+      src="{{ '/assets/img/dmi-logo.png' | relative_url }}"
+      alt="DMI — Deep Model Inspector"
+      width="2218"
+      height="779"
+      loading="lazy"
+    >
+  </span>
+  <span class="home-release-card__copy">
+    <strong>DMI</strong>
+    <span>A decoupled, asynchronous observation system for high-speed LLM inference.</span>
+    <span class="home-release-card__cta">Explore DMI on GitHub <span aria-hidden="true">→</span></span>
+  </span>
+</a>
